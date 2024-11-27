@@ -1,0 +1,93 @@
+.job-search-page {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background-image: url('../assets/Job.png');
+    background-attachment: fixed;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+}
+
+.content h1 {
+    font-size: 48px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: 10px;
+}
+
+.button-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.learn-more-btn, .browse-jobs-btn {
+    margin: 10px;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.learn-more-btn {
+    background-color: #4fc3f7 !important;
+    border-color: #4fc3f7 !important;
+}
+
+.learn-more-btn:hover {
+    background-color: #0288d1 !important;
+    border-color: #0288d1 !important;
+}
+
+.browse-jobs-btn {
+    background-color: #4fc3f7 !important;
+    border-color: #4fc3f7 !important;
+    color: white !important;
+    outline: none;
+}
+
+.browse-jobs-btn:hover {
+    background-color: #0288d1 !important;
+    border-color: #0288d1 !important;
+}
+
+.browse-jobs-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 132, 255, 0.6);
+}
